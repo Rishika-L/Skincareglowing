@@ -1,0 +1,73 @@
+/* Layout.css */
+#nav {
+    background-color: #ebeef1; 
+  }
+  
+  /* Navbar brand styling */
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom:1px ; 
+    margin-left: 30px;
+  }
+  
+  .navbar-brand:hover {
+    color: #007bff; 
+  }
+  
+  .me-auto{
+    margin-left: 150px;
+  }
+
+  .nav-link {
+    color: #555; 
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link i {
+    margin-right: 8px;
+    align-items: center; 
+  }
+  
+  .nav-link:hover {
+    color: #007bff; 
+  }
+  
+  .me-autos {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+  }
+  
+  .me-autos i {
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .me-autos i:hover {
+    color: #007bff; 
+  }
+  
+  .container {
+    margin-top: 5px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-link {
+      padding: 5px 10px;
+      font-size: 0.9rem;
+    }
+  
+    .me-autos i {
+      font-size: 1rem;
+    }
+  }
+  
