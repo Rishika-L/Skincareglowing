@@ -2,85 +2,77 @@ import React from "react";
 import c1 from "./images/c1.jpeg";
 import c2 from "./images/c2.jpeg";
 import c3 from "./images/c3.jpeg";
-import Coll1 from "./images/moisturizing-cream1.jpeg"; 
-import Coll2 from "./images/anti-aging-serum2.jpeg";
-import Coll3 from "./images/sunscreen-lotion3.jpeg";
-import Coll4 from "./images/night-cream.jpeg";
-import Coll5 from "./images/brightening-lotions.jpeg";
-import Coll6 from "./images/cleansing-gel1.jpeg";
-import Coll7 from "./images/night-cream02.jpeg";
-import Coll8 from "./images/brightening-lotion02.jpeg";
-import Coll9 from "./images/cleansing-gel01.jpeg";
-import SummerImage from "./images/SummerImage.jpeg";
-import WhatsNewImage from "./images/WhatsNewImage.jpeg";
-import Buy1Get1Image from "./images/Buy1Get1Image.jpeg";
+
+import Blog1 from "./images/Moisturizer.jpeg";
+import Blog2 from "./images/anti-aging-serum.jpeg";
+import Blog3 from "./images/Sunscreen Lotion1.jpeg";
+import Blog4 from "./images/night-cream1.jpeg";
+import Blog5 from "./images/brightening-lotion.jpeg";
+import Blog6 from "./images/cleansing-gel.jpeg";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Home.css";
 
-const collectionItems = [
+const offers = [
   {
     id: 1,
-    title: "Glowing Serum",
-    description: "Brighten your skin with our glow-enhancing.",
-    price: "$35.00",
-    imageUrl: Coll1,
+    title: "Moisturizing Cream",
+    description: "Nourish your skin with deep hydration.",
+    imageUrl: Blog1,
   },
   {
     id: 2,
-    title: "Moisturizer",
-    description: "Deep hydration for smooth and glowing skin.",
-    price: "$25.00",
-    imageUrl: Coll2,
+    title: "Anti-aging Serum",
+    description: "Rejuvenate your skin and reduce fine lines.",
+    imageUrl: Blog2,
   },
   {
     id: 3,
-    title: "Sunscreen",
-    description: "Protect your skin while keeping it glowing.",
-    price: "$18.00",
-    imageUrl: Coll3,
+    title: "Sunscreen Lotion",
+    description: "Protect your skin from harmful UV rays.",
+    imageUrl: Blog3,
   },
   {
     id: 4,
     title: "Night Cream",
-    description: "Rejuvenate your skin overnight with our luxurious cream.",
-    price: "$40.00",
-    imageUrl: Coll4,
+    description: "Restore and replenish your skin while you sleep.",
+    imageUrl: Blog4,
   },
   {
     id: 5,
-    title: "Face Mask",
-    description: "Purify your skin and achieve a glowing complexion.",
-    price: "$22.00",
-    imageUrl: Coll5,
+    title: "Brightening Lotion",
+    description: "Achieve an even skin tone with brightening effects.",
+    imageUrl: Blog5,
   },
   {
     id: 6,
-    title: "Vitamin C Serum",
-    description: "Revitalize your skin and brighten your complexion.",
-    price: "$30.00",
-    imageUrl: Coll6,
+    title: "Cleansing Gel",
+    description: "Gently cleanse and refresh your skin.",
+    imageUrl: Blog6,
+  },
+];
+
+const services = [
+  {
+    title: "Facial Treatments",
+    description: "Rejuvenate your skin with our personalized facial therapies.",
+    icon: "💆‍♀️",
   },
   {
-    id: 7,
-    title: "Exfoliating Scrub",
-    description: "Gently exfoliate to reveal fresh, glowing skin care.",
-    price: "$28.00",
-    imageUrl: Coll7,
+    title: "Glow Boosters",
+    description: "Brighten your complexion with our signature glow-boosting treatments.",
+    icon: "✨",
   },
   {
-    id: 8,
-    title: "Hydrating Mask",
-    description: "Hydrate your skin with a nourishing skin care mask.",
-    price: "$33.00",
-    imageUrl: Coll8,
+    title: "Hydration Therapy",
+    description: "Keep your skin hydrated and radiant with our specialized treatments.",
+    icon: "💧",
   },
   {
-    id: 9,
-    title: "Vitamin E Serum",
-    description: "Revitalize your skin and brighten your complexion.",
-    price: "$20.00",
-    imageUrl: Coll9,
+    title: "Skin Consultation",
+    description: "Expert advice for your unique skincare needs.",
+    icon: "👩‍⚕️",
   },
 ];
 
@@ -123,77 +115,148 @@ const Home = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+      <br/>
 
-      <br />
-
-      <div className="carousel-container-fluid container my-1">
-        <h2 className="text-center mb-4">Exciting Offers</h2>
-        <div className="row">
-          <div className="col-md-4">
-            <div className="offer-card">
-              <img
-                src={SummerImage}
-                alt="Summer Collection"
-                className="offer-img img-fluid rounded"
-              />
-              <h3 className="text-center mt-3">Summer Collection</h3>
-              <button className="offer-btn1 mt-auto">
-                Discover Now <i className="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="offer-card">
-              <img
-                src={WhatsNewImage}
-                alt="What's New"
-                className="offer-img img-fluid rounded"
-              />
-              <h3 className="text-center mt-3">New Collection</h3>
-              <button className="offer-btn1 mt-auto">
-                Discover Now <i className="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="offer-card">
-              <img
-                src={Buy1Get1Image}
-                alt="Buy 1 Get 1"
-                className="offer-img img-fluid rounded"
-              />
-              <h3 className="text-center mt-3">Buy 1 Get 1</h3>
-              <button className="offer-btn1 mt-auto">
-                Discover Now <i className="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
+    <h2 className="text-center mb-4">Our Services</h2>
+    <div className="services-container">
+      {services.map((service, index) => (
+        <div className="service-card" key={index}>
+          <span className="service-icon">{service.icon}</span>
+          <h3 className="service-title">{service.title}</h3>
+          <p className="service-description">{service.description}</p>
         </div>
-      </div>
+      ))}
+    </div>
 
-      <div className="collection-container container my-4">
-        <h2 className="text-center">Our Glowing Skincare Collection</h2>
-        <br/>
-        <br/>
-        <div className="row">
-          {collectionItems.map((item) => (
-            <div key={item.id} className="col-md-4 mb-4">
-              <div className="collection-card">
-                <img
-                  src={item.imageUrl}
-                  alt={item.title}
-                  className="collection-img img-fluid"
-                />
-                <div className="collection-info mt-2">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  <p className="price">{item.price}</p>
-                </div>
+    <div className="offers-container container my-1 ">
+      <h2 className="text-center mb-4">Glowing Skincare Offers</h2>
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+        {offers.map((offer) => (
+          <div key={offer.id} className="col">
+            <div className="card offer-card shadow-sm h-100">
+              <img
+                src={offer.imageUrl}
+                alt={offer.title}
+                className="offer-img card-img-top img-fluid rounded"
+              />
+              <div className="card-body d-flex flex-column">
+                <h3 className="card-title">{offer.title}</h3>
+                <p className="card-text">{offer.description}</p>
+                <button className="offer-btn  mt-auto ">
+                  Shop Now
+                </button>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
+    </div>
+
+    <div class="container" id="contact" data-aos="fade-up" data-aos-duration="1500">
+  <h2 class="text-center mb-4">CONTACT US</h2>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="form-group">
+        <input type="text" class="form-control" id="usr" placeholder="Name" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <input type="email" class="form-control" id="eml" placeholder="Email" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <input type="number" class="form-control" id="phn" placeholder="Phone" />
+      </div>
+    </div>
+  </div>
+<div class="form-group mt-3">
+    <textarea class="form-control" rows="3" id="comment" placeholder="Message"></textarea>
+  </div>
+  <div class="text-center mt-4" id="messagebtn">
+    <button class="btn btn-primary px-4 py-2">Send Message</button>
+  </div>
+</div>
+
+<footer className="bg-dark text-white py-5">
+        <div className="container">
+          <div className="row">
+            {/* About Us */}
+            <div className="col-lg-4 mb-4">
+              <h5 className="text-uppercase">About Us</h5>
+              <p className="small">
+                At Glowing Skincare, we are dedicated to providing premium skincare products and services tailored to your unique needs. Our mission is to empower you to feel confident in your skin every day.
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div className="col-lg-4 mb-4">
+              <h5 className="text-uppercase">Quick Links</h5>
+              <ul className="list-unstyled">
+                <li>
+                  <a href="aa" className="text-white text-decoration-none">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#services" className="text-white text-decoration-none">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#offers" className="text-white text-decoration-none">
+                    Offers
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="text-white text-decoration-none">
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="aa" className="text-white text-decoration-none">
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Information */}
+            <div className="col-lg-4 mb-4">
+              <h5 className="text-uppercase">Contact Us</h5>
+              <p className="small">
+                <strong>Address:</strong> 123 Glowing Lane, Skincare City, SC 45678
+              </p>
+              <p className="small">
+                <strong>Email:</strong> contact@glowingskincare.com
+              </p>
+              <p className="small">
+                <strong>Phone:</strong> +1 (800) 123-4567
+              </p>
+              <div className="social-icons mt-3">
+                <a href="aa" className="text-white me-3">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a href="aa" className="text-white me-3">
+                  <i className="fab fa-twitter"></i>
+                </a>
+                <a href="aa" className="text-white me-3">
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a href="aa" className="text-white">
+                  <i className="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <div className="text-center mt-4">
+            <p className="mb-0 small">&copy; 2024 Glowing Skincare. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };

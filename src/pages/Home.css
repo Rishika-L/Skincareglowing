@@ -59,6 +59,185 @@
       color: #555; 
     }
   }
+
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-icon {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 10px;
+  }
+  
+  .service-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .service-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  #contact {
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* White Box Shadow */
+  }
+  
+  #contact h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  #contact .form-control {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3); /* White Box Shadow */
+  }
+  
+  #contact .form-control:focus {
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Bright white glow on focus */
+  }
+  
+  #contact textarea.form-control {
+    resize: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3); /* White Box Shadow */
+  }
+  
+  #messagebtn button {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #26b621;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4); /* White Box Shadow */
+  }
+  
+  #messagebtn button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.6); /* Intense white shadow on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #contact {
+      padding: 30px 15px;
+    }
+  
+    #contact h2 {
+      font-size: 1.8rem;
+    }
+  
+    #messagebtn button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }      
+   
+  /* Footer Section */
+footer {
+  background-color: #343a40; /* Dark gray background */
+  color: #ffffff; /* White text */
+  padding: 3rem 1rem; /* Top and bottom padding */
+  font-size: 0.9rem; /* Slightly smaller font size for footer */
+}
+
+footer h5 {
+  font-weight: bold; /* Bold headings */
+  letter-spacing: 1px; /* Spacing for an elegant look */
+  margin-bottom: 1rem; /* Space below headings */
+}
+
+footer p {
+  margin: 0 0 0.5rem; /* Reduce space between paragraphs */
+  line-height: 1.6; /* Improve readability */
+}
+
+footer a {
+  color: #ffffff; /* White links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+footer a:hover {
+  color: #f8c471; /* Light orange hover effect */
+}
+
+footer ul {
+  padding: 0; /* Remove padding from the list */
+  list-style: none; /* Remove bullet points */
+}
+
+footer ul li {
+  margin-bottom: 0.5rem; /* Space between links */
+}
+
+.social-icons a {
+  font-size: 1.2rem; /* Larger icons */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+.social-icons a:hover {
+  color: #f8c471; /* Light orange color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+footer .text-center {
+  margin-top: 2rem; /* Space above copyright section */
+  font-size: 0.8rem; /* Smaller text for copyright */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer .row > div {
+    margin-bottom: 2rem; /* Add space between columns on smaller screens */
+  }
+  footer h5 {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+}
+
 /* Collection.css */
 .collection-container {
   text-align: center;
@@ -69,7 +248,7 @@
 
 .collection-container h2 {
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -77,7 +256,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px; /* Adjust spacing between cards */
+  gap: 50px; 
 }
 
 .collection-card {
@@ -85,11 +264,11 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 280px; /* Set consistent card width */
-  height: 430px; /* Set consistent card height */
+  width: 280px; 
+  height: 350px; 
   display: flex;
-  flex-direction: column; /* Ensure content stacks vertically */
-  justify-content: space-between; /* Spread content evenly */
+  flex-direction: column; 
+  justify-content: space-between; 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -99,8 +278,8 @@
 }
 
 .collection-img {
-  width: 100%;
-  height: 200px; /* Set consistent image height */
+  width:100%;
+  height:180px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
@@ -115,42 +294,23 @@
 }
 
 .collection-info h3 {
- 
+  font-size: 22px;
   color: #333;
   text-transform: capitalize;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .collection-info p {
-  font-size: 10px;
-  color: #666;
-  margin: 5px 0;
-  margin-bottom: 35px;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
 }
 
 .price {
   font-size: 16px;
   font-weight: bold;
   color: #333;
-  margin: 10px 0;
-}
-
-.add-to-cart-btn {
-  padding: 10px 20px;
-  font-size: 14px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 255, 0, 0.3);
-}
-
-.add-to-cart-btn:hover {
-  background-color: #68c06c;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+  margin: 10px 60px;
 }
 
 /* Shop.css */

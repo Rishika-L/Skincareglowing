@@ -77,11 +77,7 @@ const collectionItems = [
 ];
 
 const Collection = () => {
-  // Placeholder function for adding to cart
-  const handleAddToCart = (item) => {
-    alert(`${item.title} has been added to your cart.`);
-    // Implement your cart functionality here
-  };
+  
 
   return (
     <div className="collection-container container my-0">
@@ -92,14 +88,9 @@ const Collection = () => {
             <img src={item.imageUrl} alt={item.title} className="collection-img" /> 
             <div className="collection-info">
               <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <p className="price1">{item.description}</p>
               <p className="price">{item.price}</p>
-              <button 
-                className="add-to-cart-btn" 
-                onClick={() => handleAddToCart(item)}
-              >
-                Add to Cart
-              </button>
+              
             </div>
           </div>
         ))}
