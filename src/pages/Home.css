@@ -1,7 +1,7 @@
 /* Custom CSS for 94% width */
 .carousel-item img {
     width: 90%;
-    height: 500px;
+    height: 550px;
     margin-top: 10px; 
     display: block;
   }
@@ -12,6 +12,38 @@
     border-radius: 10px;
   }
   
+  .carouselcaption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+ }
+  
+  .carousel-caption p {
+    color: #000; 
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-button {
+    margin-top: 1rem; 
+    background-color: green;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-button:hover {
+    background-color: green; 
+    transform: scale(1.1); 
+  }
+  
+  .text-center {
+    margin-top:30px;
+  }
   .offer-card {
     text-align: center;
     margin-left: 40px;
@@ -21,6 +53,7 @@
   .offer-card:hover {
     transform: scale(1.01);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    
   }
   
   .offer-img {
@@ -37,6 +70,9 @@
     width: 60%;
     border: none;
     background-color: white;
+  }
+  .offer-btn1:hover{
+    background-color: green;
   }
   @media (max-width: 768px) {
     .carousel-container {
@@ -110,7 +146,7 @@
   #contact {
     padding: 40px 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* White Box Shadow */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); 
   }
   
   #contact h2 {
@@ -126,19 +162,19 @@
     color: #333;
     background-color: #fff;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3); /* White Box Shadow */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3); 
   }
   
   #contact .form-control:focus {
     outline: none;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Bright white glow on focus */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); 
   }
   
   #contact textarea.form-control {
     resize: none;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3); /* White Box Shadow */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3); 
   }
   
   #messagebtn button {
@@ -151,12 +187,12 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     background-color: #26b621;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4); /* White Box Shadow */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4); 
   }
   
   #messagebtn button:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.6); /* Intense white shadow on hover */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.6); 
   }
   
   /* Responsive Adjustments */
@@ -175,81 +211,20 @@
     }
   }      
    
-  /* Footer Section */
-footer {
-  background-color: #343a40; /* Dark gray background */
-  color: #ffffff; /* White text */
-  padding: 3rem 1rem; /* Top and bottom padding */
-  font-size: 0.9rem; /* Slightly smaller font size for footer */
-}
-
-footer h5 {
-  font-weight: bold; /* Bold headings */
-  letter-spacing: 1px; /* Spacing for an elegant look */
-  margin-bottom: 1rem; /* Space below headings */
-}
-
-footer p {
-  margin: 0 0 0.5rem; /* Reduce space between paragraphs */
-  line-height: 1.6; /* Improve readability */
-}
-
-footer a {
-  color: #ffffff; /* White links */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease; /* Smooth color transition */
-}
-
-footer a:hover {
-  color: #f8c471; /* Light orange hover effect */
-}
-
-footer ul {
-  padding: 0; /* Remove padding from the list */
-  list-style: none; /* Remove bullet points */
-}
-
-footer ul li {
-  margin-bottom: 0.5rem; /* Space between links */
-}
-
-.social-icons a {
-  font-size: 1.2rem; /* Larger icons */
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects */
-}
-
-.social-icons a:hover {
-  color: #f8c471; /* Light orange color on hover */
-  transform: scale(1.1); /* Slight zoom effect */
-}
-
-footer .text-center {
-  margin-top: 2rem; /* Space above copyright section */
-  font-size: 0.8rem; /* Smaller text for copyright */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  footer .row > div {
-    margin-bottom: 2rem; /* Add space between columns on smaller screens */
-  }
-  footer h5 {
-    font-size: 1.2rem; /* Adjust heading size */
-  }
-}
 
 /* Collection.css */
 .collection-container {
   text-align: center;
   margin: auto;
-  background: #f9f9f9;
-  padding: 20px;
+  background: f9f9f9;
 }
 
 .collection-container h2 {
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-transform: uppercase;
+  margin-top: 30px;
+  padding-bottom: 10px;
 }
 
 .collection-grid {
@@ -316,16 +291,16 @@ footer .text-center {
 /* Shop.css */
 .shop-container {
     text-align: center;
-    padding: 10px 20px;
-    background-color: #f9f9f9;
-   
+    background-color:f9f9f9;
+    margin: auto;
   }
   
-  h2 {
-    font-size: 36px;
+  .shop-container h2 {
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    margin-top: 30px;
+    padding-bottom: 10px;
   }
   
   .products-flex {
@@ -344,10 +319,7 @@ footer .text-center {
     padding: 20px;
     transition: transform 0.3s ease-in-out;
   }
-  
-  .product-card:hover {
-    transform: scale(1.05);
-  }
+
   
   .product-img {
     width: 100%;
@@ -377,9 +349,9 @@ footer .text-center {
   
   .button-container {
     display: flex;
-    justify-content: center; /* Center the button */
+    justify-content: center;
   }
-  
+   
   .add-to-cart-btn {
     padding: 10px 20px;
     font-size: 18px;
@@ -392,10 +364,11 @@ footer .text-center {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
   }
   
   .add-to-cart-btn:hover {
-    background-color: #66bb6a;
+    background-color: #62c067;
   }
   
   .cart-info {
@@ -447,16 +420,16 @@ footer .text-center {
 .offers-container {
   text-align: center;
   margin:  auto;
-  background: #f9f9f9;
-  margin-bottom: 500px;
-  padding: 20px;
+  background-color: f9f9f9;
 }
 
-h2 {
-  font-size: 36px;
+.offers-container h2 {
   color: #333;
-  margin-bottom: 3px;
+  margin-bottom: 30px;
   text-transform: uppercase;
+  margin-top: 30px;
+  padding-bottom: 10px;
+ 
 }
 
 .row {
@@ -542,6 +515,24 @@ h2 {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 255, 0, 0.3);
+ 
+.green-btn {
+  padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 99px;
+}
+  }
+.green-btn:hover {
+  background-color: #218838; /* Darker green on hover */
 }
 
 .offer-btn:hover {
@@ -606,6 +597,7 @@ h2 {
 .blog-header h1 {
   font-size: 2.5rem;
   color: #333;
+ 
 }
 
 .blog-subtitle {
@@ -638,16 +630,19 @@ h2 {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
-  background: #f4f4f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(116, 196, 51, 0.1);
+  text-align: center;
+  background-color:f9f9f9;
+  padding-top: 30px;
+
 }
 
 h2 {
   text-align: center;
   font-size: 24px;
   color: #333;
+  text-transform: uppercase;
 }
 
 .feedback-form {
@@ -702,11 +697,11 @@ h2 {
   box-shadow: 0 0 25px rgb(179, 209, 179);
 }
 
-p {
+.small {
   text-align: center;
-  font-size: 25px;
-  color: #26b621;
-  font-weight: bold;
+  font-size: 15px;
+  color:rgb(255, 255, 255);
+ 
   margin-top:20px
 }
 

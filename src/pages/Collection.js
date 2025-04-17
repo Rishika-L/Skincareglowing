@@ -80,7 +80,7 @@ const Collection = () => {
   
 
   return (
-    <div className="collection-container container my-0">
+    <div className="collection-container container my-7">
       <h2>Our Glowing Skincare Collection</h2>
       <div className="collection-grid">
         {collectionItems.map((item) => (
